@@ -14,7 +14,7 @@ EMAIL_SERVER = "smtp.gmail.com"
 EMAIL_SERVER_PORT = 465 # post smtp pentru conexiuni securizate
 
 #send email to user
-def send_battery_email(user_email, user_name):
+def send_battery_email(user_email, user_name, battery):
     message = MIMEMultipart("alternative")
     message["Subject"] = "Battery fully charged"
     message["From"] = EMAIL_USER
@@ -24,6 +24,7 @@ def send_battery_email(user_email, user_name):
     <html>
     <body>
         <h2>Hello {user_name}! Your battery is fully charged!</h2>
+        <p>Battery info: {battery[0]}</p>
         <p>This email is sent from a <b>Python</b> script.</p>
     </body>
     </html>
@@ -53,20 +54,22 @@ def get_battery_percentage(value: int):
     
 #stop the screen go AFK
 def move_mouse():
-    while True:
-        x = random.randint(600, 800)
-        y = random.randint(200, 600)
-        pyautogui.moveTo(x, y, 0.5)
-        time.sleep(20)
+    x = random.randint(600, 800)
+    y = random.randint(200, 600)
+    pyautogui.moveTo(x, y, 0.5)
+       
+
+battery = psutil.sensors_battery()
 
 #loop while os is checking percentage and mouse is moving to stop AFK.
-#when percentage == value loop breaks and sends email to user 
+#when percentage == value loop breaks and sends email to user
+percentage = int(input("What percentage interests you? ")) 
+print(f"Got it. Will let you know when battery is {percentage}%.")
 while True: 
+        time.sleep(15)
         move_mouse()
-        time.sleep(60)
-        print(f"Fetching battery info...")   
-        if get_battery_percentage(99):
-            send_battery_email("iancustefan28@yahoo.com", "Stefan Iancu")
+        print(f"Fetching battery info...{battery[0]}%")   
+        if get_battery_percentage(percentage):
+            send_battery_email("iancustefan28@yahoo.com", "Stefan Iancu", battery)
             break
-
 
