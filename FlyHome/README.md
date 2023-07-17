@@ -1,7 +1,7 @@
 ## FlyHome - CLI app that generates a boarding pass
 
 ### Stack + OS
-VSCode, SQLite, Pyhton 3.11 /
+VSCode, SQLite, Python 3.11 /
 Apple M1, Ventura 13.4.1
 
 ### Purpose
