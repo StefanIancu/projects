@@ -4,6 +4,7 @@ import pyautogui
 import random
 import smtplib
 
+from plyer import notification
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
@@ -61,6 +62,14 @@ def move_mouse():
 
 battery = psutil.sensors_battery()
 
+#send notification
+def send_notification():
+     notification.notify(
+          title = "Charging status",
+          message = "Your battery has reached the desired level",
+          timeout = 10
+     )
+
 #loop while os is checking percentage and mouse is moving to stop AFK.
 #when percentage == value loop breaks and sends email to user
 percentage = int(input("What percentage interests you? ")) 
@@ -71,5 +80,6 @@ while True:
         print(f"Fetching battery info...{battery[0]}%")   
         if get_battery_percentage(percentage):
             send_battery_email("iancustefan28@yahoo.com", "Stefan Iancu", battery)
+            send_notification()
             break
 

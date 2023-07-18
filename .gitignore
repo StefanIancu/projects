@@ -1,6 +1,7 @@
 .DS_Store
 .DS_Store
 .venv
+.virtual
 .virtual/pyvenv.cfg
 .virtual/bin/activate
 .virtual/bin/activate.csh
