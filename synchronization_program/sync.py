@@ -34,13 +34,13 @@ def copy_source_to_replica(source, replica):
         print(err)
 
 def check_new_file(source, replica):
+    """Checks if there are any new files created."""
+    _list = lambda list : len(list)
+    initial_list = _list(os.listdir(source))
     source_list = os.listdir(source)
-    replica_list = os.listdir(replica)
-    matches = matches = list(set(source_list).intersection(replica_list))
-    for i in source_list:
-        if i not in matches:
-            logging.info(f"{i} was created.")
-            show(f"{i} was created.")
+    if len(source_list) > initial_list:
+        print("A folder was created")
+
 
 # checks both dirs and deletes what is not a match. logs the details and 
 # prints on the console as well
