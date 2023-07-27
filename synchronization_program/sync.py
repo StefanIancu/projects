@@ -82,5 +82,5 @@ def running_program(source, replica):
         check_file_integrity(source, replica)
         print("Integrity checked.")
 
-# running_program(SOURCE_PATH, REPLICA_PATH)
+running_program(SOURCE_PATH, REPLICA_PATH)
 
