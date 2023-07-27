@@ -15,3 +15,11 @@
 2023-07-26 18:21:32,315 [INFO] lola.txt deleted
 2023-07-26 18:22:47,373 [INFO] lola.txt was deleted because it doesn't exist anymore in main dir.
 2023-07-26 18:36:11,904 [INFO] folder.txt was deleted because it doesn't exist anymore in main dir.
+2023-07-27 11:13:10,815 [INFO] folder_one was deleted because it doesn't exist anymore in main dir.
+2023-07-27 11:24:41,266 [INFO] Working in /Users/stefantraianiancu/Desktop/projects/synchronization_program/source_folder.
+2023-07-27 11:25:14,238 [INFO] Working in /Users/stefantraianiancu/Desktop/projects/synchronization_program/source_folder.
+2023-07-27 11:25:16,358 [INFO] Working in /Users/stefantraianiancu/Desktop/projects/synchronization_program/source_folder.
+2023-07-27 11:45:38,500 [INFO] test.txt was copied to replica.
+2023-07-27 11:48:19,585 [INFO] birthday.gif was created and copied to replica.
+2023-07-27 11:50:49,732 [INFO] folder.txt was deleted because it doesn't exist anymore in main dir.
+2023-07-27 11:52:14,240 [INFO] Working in /Users/stefantraianiancu/Desktop/projects/synchronization_program/source_folder.
