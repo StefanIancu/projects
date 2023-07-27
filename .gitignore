@@ -6369,3 +6369,5 @@
 .virtual/lib/python3.11/site-packages/typing_extensions-4.7.1.dist-info/RECORD
 .virtual/lib/python3.11/site-packages/typing_extensions-4.7.1.dist-info/WHEEL
 .virtual/share/man/man1/qr.1
+synchronization_program/__pycache__/sync.cpython-311.pyc
+synchronization_program/__pycache__/tests.cpython-311.pyc
