@@ -19,6 +19,11 @@ REPLICA_PATH = ROOT / "replica_folder"
 logging.basicConfig(filename=f"{ROOT}/log.log", level=logging.DEBUG,
                      format="%(asctime)s [%(levelname)s] %(message)s")
 
+# setting the time
+now = datetime.now()
+updated_now = now.strftime("%d.%m.%y, %H:%M:%S")
+
+# defining three printing functions that helps the logger 
 def delete(msg):
     """Prints a message on the console. Works parallel with the logger."""
     print(f"[INFO] {msg} deleted.")
@@ -28,8 +33,10 @@ def show(msg):
     print(f"[INFO] {msg}")
 
 def logging_source(source):
-    """Logs the location where the program is running."""
-    logging.info(f"Working in {source}.")
+    """Logs the location where at every program start."""
+    logging.info(f"Started working in {source}.")
+    short_path = str(source).split("/")
+    show(f"Started working in {short_path[5]}/{short_path[6]} on {updated_now}.")
 
 # logs each folder that has been copied and created
 def copy2_verbose(src, repl):
@@ -76,3 +83,4 @@ def running_program(source, replica):
         print("Integrity checked.")
 
 running_program(SOURCE_PATH, REPLICA_PATH)
+

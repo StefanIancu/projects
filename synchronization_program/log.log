@@ -23,3 +23,17 @@
 2023-07-27 11:48:19,585 [INFO] birthday.gif was created and copied to replica.
 2023-07-27 11:50:49,732 [INFO] folder.txt was deleted because it doesn't exist anymore in main dir.
 2023-07-27 11:52:14,240 [INFO] Working in /Users/stefantraianiancu/Desktop/projects/synchronization_program/source_folder.
+2023-07-27 11:56:23,207 [INFO] Working in /Users/stefantraianiancu/Desktop/projects/synchronization_program/source_folder.
+2023-07-27 11:59:47,009 [INFO] Working in /Users/stefantraianiancu/Desktop/projects/synchronization_program/source_folder.
+2023-07-27 11:59:57,584 [INFO] talking_heads.mp3 was deleted because it doesn't exist anymore in main dir.
+2023-07-27 12:00:01,807 [INFO] abc.txt was deleted because it doesn't exist anymore in main dir.
+2023-07-27 12:00:18,604 [INFO] ted_talk.mp3 was created and copied to replica.
+2023-07-27 12:00:39,726 [INFO] folder_test was created and copied to replica.
+2023-07-27 12:00:54,652 [INFO] folder_test was deleted because it doesn't exist anymore in main dir.
+2023-07-27 12:02:04,039 [INFO] Working in /Users/stefantraianiancu/Desktop/projects/synchronization_program/source_folder.
+2023-07-27 12:03:20,068 [INFO] Working in /Users/stefantraianiancu/Desktop/projects/synchronization_program/source_folder.
+2023-07-27 12:04:59,090 [INFO] Started working in /Users/stefantraianiancu/Desktop/projects/synchronization_program/source_folder.
+2023-07-27 12:10:02,306 [INFO] Started working in /Users/stefantraianiancu/Desktop/projects/synchronization_program/source_folder.
+2023-07-27 12:10:31,673 [INFO] Started working in /Users/stefantraianiancu/Desktop/projects/synchronization_program/source_folder.
+2023-07-27 12:10:52,707 [INFO] friends.txt was created and copied to replica.
+2023-07-27 12:11:07,617 [INFO] friends.txt was deleted because it doesn't exist anymore in main dir.
